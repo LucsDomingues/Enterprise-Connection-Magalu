@@ -16,8 +16,9 @@
     <header>
         <article class="cabecalho">
             <section>
-                <h1>TRAVELLER</h1>
+                <h1><a href="index.html"> TRAVELLER</a></h1>
             </section>
+
             <nav class="header__menu">
                 <ul class="menu">
                     <li><a href="#"><i class="fas fa-question-circle"></i> Ajuda</a></li>
@@ -34,55 +35,75 @@
 
         <nav>
             <ul class="sessoes">
-                <li class="box">
-                    <a href="#"><i class="fas fa-map-marked-alt"></i></a>
-                    <a href="#">Como chegar</a>
-                </li>
+                <a href="#" class="link__box">
+                    <li class="box">
+                        <i class="fas fa-map-marked-alt"></i>
+                        Como chegar
+                    </li>
+                </a>
 
-                <li class="box">
-                    <a href="#"><i class="fas fa-info-circle"></i></a>
-                    <a href="#">Dicas</a>
-                </li>
+                <a href="#" class="link__box">
+                    <li class="box">
+                        <i class="fas fa-info-circle"></i>
+                        Dicas
+                    </li>
+                </a>
 
-                <li class="box selecionado">
-                    <a style="color: #128172;" href="index.htmnext"><i class="fas fa-hotel"></i></a>
-                    <a style="color: #128172;" href="#">Hospedagem</a>
-                </li>
+                <a style="color: #128172;" href="index.html" rel="next" class="link__box">
+                    <li class="box selecionado">
+                        <i class="fas fa-hotel"></i>
+                        Hospedagem
+                    </li>
+                </a> 
 
-                <li class="box">
-                    <a href="#"><i class="fas fa-car"></i></a>
-                    <a href="#">Carro</a>
-                </li>
+                <a href="#" class="link__box">
+                    <li class="box">
+                        <i class="fas fa-car"></i>
+                        Carro
+                    </li>
+                </a>
 
-                <li class="box">
-                    <a href="#"><i class="fas fa-landmark"></i></a>
-                    <a href="#">História</a>
-                </li>
+                <a href="#" class="link__box">
+                    <li class="box">
+                        <i class="fas fa-landmark"></i>
+                        História
+                    </li>
+                </a>
 
-                <li class="box">
-                    <a href="#"><i class="fas fa-theater-masks"></i></a>
-                    <a href="#">Cultura</a>
-                </li>
+                <a href="#" class="link__box">
+                    <li class="box">
+                        <i class="fas fa-theater-masks"></i>
+                        Cultura
+                    </li>
+                </a>
 
-                <li class="box">
-                    <a href="#"><i class="fas fa-tree"></i></a>
-                    <a href="#">Parques</a>
-                </li>
+                <a href="#" class="link__box">
+                    <li class="box">
+                        <i class="fas fa-tree"></i>
+                        Parques
+                    </li>
+                </a>
 
-                <li class="box">
-                    <a href="#"><i class="fas fa-utensils"></i></a>
-                    <a href="#">Gastronomia</a>
-                </li>
+                <a href="#" class="link__box">
+                    <li class="box">
+                        <i class="fas fa-utensils"></i>
+                        Gastronomia
+                    </li>
+                </a>
 
-                <li class="box">
-                    <a href="#"><i class="fas fa-glass-cheers"></i></a>
-                    <a href="#">Vida noturna</a>
-                </li>
+                <a href="#" class="link__box">
+                    <li class="box">
+                        <i class="fas fa-glass-cheers"></i>
+                        Vida noturna
+                    </li>
+                </a>
 
-                <li class="box">
-                    <a href="#"><i class="fas fa-guitar"></i></a>
-                    <a href="#">Entretenimento</a>
-                </li>
+                <a href="#" class="link__box">
+                    <li class="box">
+                        <i class="fas fa-guitar"></i>
+                        Entretenimento
+                    </li>
+                </a>
             </ul>
         </nav>
     </header>
@@ -92,8 +113,9 @@
             <div class="fundo">
                 <article class="container">
                     <section>
-                        <h2>Hospedagem</h2>
+                        <h2 class="titulo__container">Hospedagem</h2>
                     </section>
+                    
                     <form action="" name="busca__hoteis" id="busca__hoteis" method="post">
                         <article class="campo__tipos">
                             <section class="tipo">
@@ -134,7 +156,7 @@
                             </section>
 
                             <section class="campo">
-                                <input type="button" value="Buscar">
+                                <input type="button" value="Buscar" class="busca">
                             </section>
                         </article>
                     </form>
@@ -144,15 +166,17 @@
 
         <div class="container__hoteis">
             <article class="box__hoteis">
-                <picture>
-                    <source media="(max-width: 850px)" srcset="./images/renaissance-sao-paulo-hotel-full.jpg"
-                        type="image/jpg">
-                    <img src="images/renaissance-sao-paulo-hotel-300.jpg"
-                        alt="Foto de uma suíte do hotel Renaissance São Paulo Hotel">
-                </picture>
+                <a href="#">
+                    <picture>
+                        <source media="(max-width: 850px)" srcset="./images/renaissance-sao-paulo-hotel-full.jpg"
+                            type="image/jpg">
+                        <img src="images/renaissance-sao-paulo-hotel-300.jpg"
+                            alt="Foto de uma suíte do hotel Renaissance São Paulo Hotel">
+                    </picture>
+                </a>
 
                 <section>
-                    <h3 class="titulo__hoteis">Renaissance São Paulo Hotel</h3>
+                    <h3 class="titulo__hoteis"><a href="#">Renaissance São Paulo Hotel</a></h3>
                 </section>
 
                 <section class="estrelas">
@@ -183,15 +207,17 @@
             </article>
 
             <article class="box__hoteis">
-                <picture>
-                    <source media="(max-width: 850px)" srcset="./images/blue-tree-premium-paulista-full.jpg"
-                        type="image/jpg">
-                    <img src="images/blue-tree-premium-paulista-300.jpg"
-                        alt="Foto de uma suíte do hotel Blue Tree Premium Paulista">
-                </picture>
+                <a href="#">
+                    <picture>
+                        <source media="(max-width: 850px)" srcset="./images/blue-tree-premium-paulista-full.jpg"
+                            type="image/jpg">
+                        <img src="images/blue-tree-premium-paulista-300.jpg"
+                            alt="Foto de uma suíte do hotel Blue Tree Premium Paulista">
+                    </picture>
+                </a>
 
                 <section>
-                    <h3 class="titulo__hoteis">Blue Tree Premium Paulista</h3>
+                    <h3 class="titulo__hoteis"><a href="#">Blue Tree Premium Paulista</a></h3>
                 </section>
 
                 <section class="estrelas">
@@ -221,15 +247,17 @@
             </article>
 
             <article class="box__hoteis">
-                <picture>
-                    <source media="(max-width: 850px)" srcset="./images/sheraton-sao-paulo-wtc-hotel-full.jpg"
-                        type="image/jpg">
-                    <img src="images/sheraton-sao-paulo-wtc-hotel-300.jpg"
-                        alt="Foto de uma suíte do hotel Sheraton São Paulo WTC Hotel">
-                </picture>
-
+                <a href="#">
+                    <picture>
+                        <source media="(max-width: 850px)" srcset="./images/sheraton-sao-paulo-wtc-hotel-full.jpg"
+                            type="image/jpg">
+                        <img src="images/sheraton-sao-paulo-wtc-hotel-300.jpg"
+                            alt="Foto de uma suíte do hotel Sheraton São Paulo WTC Hotel">
+                    </picture>
+                </a>
+                
                 <section>
-                    <h3 class="titulo__hoteis">Sheraton São Paulo WTC Hotel</h3>
+                    <h3 class="titulo__hoteis"><a href="#">Sheraton São Paulo WTC Hotel</a></h3>
                 </section>
 
                 <section class="estrelas">
@@ -260,15 +288,17 @@
             </article>
 
             <article class="box__hoteis">
-                <picture>
-                    <source media="(max-width: 850px)" srcset="./images/blue-tree-premium-morumbi-full.jpg"
-                        type="image/jpg">
-                    <img src="images/blue-tree-premium-morumbi-300.jpg"
-                        alt="Foto de uma suíte do hotel Blue Tree Premium Morumbi">
-                </picture>
+                <a href="#">
+                    <picture>
+                        <source media="(max-width: 850px)" srcset="./images/blue-tree-premium-morumbi-full.jpg"
+                            type="image/jpg">
+                        <img src="images/blue-tree-premium-morumbi-300.jpg"
+                            alt="Foto de uma suíte do hotel Blue Tree Premium Morumbi">
+                    </picture>
+                </a>
 
                 <section>
-                    <h3 class="titulo__hoteis">Blue Tree Premium Morumbi</h3>
+                    <h3 class="titulo__hoteis"><a href="#">Blue Tree Premium Morumbi</a></h3>
                 </section>
 
                 <section class="estrelas">
@@ -298,15 +328,17 @@
             </article>
 
             <article class="box__hoteis">
-                <picture>
-                    <source media="(max-width: 850px)" srcset="./images/bourbon-convention-ibirapuera-full.jpg"
-                        type="image/jpg">
-                    <img src="images/bourbon-convention-ibirapuera-300.jpg"
-                        alt="Foto de uma suíte do hotel Bourbon Convention Ibirapuera">
-                </picture>
+                <a href="#">
+                    <picture>
+                        <source media="(max-width: 850px)" srcset="./images/bourbon-convention-ibirapuera-full.jpg"
+                            type="image/jpg">
+                        <img src="images/bourbon-convention-ibirapuera-300.jpg"
+                            alt="Foto de uma suíte do hotel Bourbon Convention Ibirapuera">
+                    </picture>
+                </a>
 
                 <section>
-                    <h3 class="titulo__hoteis">Bourbon Convention Ibirapuera</h3>
+                    <h3 class="titulo__hoteis"><a href="#">Bourbon Convention Ibirapuera</a></h3>
                 </section>
 
                 <section class="estrelas">
@@ -336,14 +368,15 @@
             </article>
 
             <article class="box__hoteis">
-                <picture>
-                    <source media="(max-width: 850px)" srcset="./images/confort-ibirapuera-full.jpg" type="image/jpg">
-                    <img src="images/confort-ibirapuera-300.jpg" alt="Foto de uma suíte do hotel Confort Ibirapuera">
-                </picture>
-
+                <a href="#">
+                    <picture>
+                        <source media="(max-width: 850px)" srcset="./images/confort-ibirapuera-full.jpg" type="image/jpg">
+                        <img src="images/confort-ibirapuera-300.jpg" alt="Foto de uma suíte do hotel Confort Ibirapuera">
+                    </picture>
+                </a>
 
                 <section>
-                    <h3 class="titulo__hoteis">Confort Ibirapuera</h3>
+                    <h3 class="titulo__hoteis"><a href="#">Confort Ibirapuera</a></h3>
                 </section>
 
                 <section class="estrelas">
@@ -374,15 +407,17 @@
             </article>
 
             <article class="box__hoteis">
-                <picture>
-                    <source media="(max-width: 850px)" srcset="./images/golden-tulip-paulista-plaza-full.jpg"
-                        type="image/jpg">
-                    <img src="images/golden-tulip-paulista-plaza-300.jpg"
-                        alt="Foto de uma suíte do hotel Golden Tulip Paulista Plaza">
-                </picture>
+                <a href="#">
+                    <picture>
+                        <source media="(max-width: 850px)" srcset="./images/golden-tulip-paulista-plaza-full.jpg"
+                            type="image/jpg">
+                        <img src="images/golden-tulip-paulista-plaza-300.jpg"
+                            alt="Foto de uma suíte do hotel Golden Tulip Paulista Plaza">
+                    </picture>
+                </a>
 
                 <section>
-                    <h3 class="titulo__hoteis">Golden Tulip Paulista Plaza</h3>
+                    <h3 class="titulo__hoteis"><a href="#">Golden Tulip Paulista Plaza</a></h3>
                 </section>
 
                 <section class="estrelas">
@@ -413,15 +448,17 @@
             </article>
 
             <article class="box__hoteis">
-                <picture>
-                    <source media="(max-width: 850px)" srcset="./images/ibis-styles-sao-paulo-full.jpg"
-                        type="image/jpg">
-                    <img src="images/ibis-styles-sao-paulo-300.jpg"
-                        alt="Foto de uma suíte do hotel IBIS Styles São Paulo Anhembi">
-                </picture>
+                <a href="#">
+                    <picture>
+                        <source media="(max-width: 850px)" srcset="./images/ibis-styles-sao-paulo-full.jpg"
+                            type="image/jpg">
+                        <img src="images/ibis-styles-sao-paulo-300.jpg"
+                            alt="Foto de uma suíte do hotel IBIS Styles São Paulo Anhembi">
+                    </picture>
+                </a>
 
-                <section class="titulo__hoteis">
-                    <h3>IBIS Styles São Paulo Anhembi</h3>
+                <section>
+                    <h3 class="titulo__hoteis"><a href="#">IBIS Styles São Paulo Anhembi</a></h3>
                 </section>
 
                 <section class="estrelas">
@@ -452,15 +489,17 @@
             </article>
 
             <article class="box__hoteis">
-                <picture>
-                    <source media="(max-width: 850px)" srcset="./images/mercure-sao-paulo-pamplona-full.jpg"
-                        type="image/jpg">
-                    <img src="images/mercure-sao-paulo-pamplona-300.jpg"
-                        alt="Foto de uma suíte do hotel Mercure São Paulo Pamplona">
-                </picture>
+                <a href="#">
+                    <picture>
+                        <source media="(max-width: 850px)" srcset="./images/mercure-sao-paulo-pamplona-full.jpg"
+                            type="image/jpg">
+                        <img src="images/mercure-sao-paulo-pamplona-300.jpg"
+                            alt="Foto de uma suíte do hotel Mercure São Paulo Pamplona">
+                    </picture>
+                </a>
 
                 <section>
-                    <h3 class="titulo__hoteis">Mercure São Paulo Pamplona</h3>
+                    <h3 class="titulo__hoteis"><a href="#">Mercure São Paulo Pamplona</a></h3>
                 </section>
 
                 <section class="estrelas">
@@ -513,7 +552,7 @@
         <form action="ofertas" name="ofertas" id="ofertas" method="post">
             <p>Quer receber ofertas de viagens em seu email?</p>
             <input type="email" name="email" id="email" placeholder="Seu email">
-            <input type="submit" value="Inscreva-se" class="botao">
+            <input type="submit" value="Inscreva-se" class="botao__ofertas">
         </form>
 
         <p class="direitos">

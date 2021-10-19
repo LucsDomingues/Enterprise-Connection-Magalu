@@ -26,7 +26,8 @@ h1, h2, h3{
     align-items: center;
     background-color: #128172;
 }
-h1{
+h1 a{
+    text-decoration: none;
     background-image: url(../images/airplane-around-earth.png);
     background-repeat: no-repeat;
     background-position: 0px center;
@@ -58,9 +59,10 @@ h1{
     list-style: none;
     max-height: 25vh;
     border: 1px solid #ddd;
+    padding-top: 0.2rem;
     display: flex;
+    justify-content: space-between;
     overflow-x: auto;
-    padding-top: 0.5rem;
 }
 /* barra scroll */
 .sessoes::-webkit-scrollbar{
@@ -72,29 +74,31 @@ h1{
 .sessoes::-webkit-scrollbar-thumb{
     background-color: #128172;
     border-radius: 20px;
-    box-shadow: 0 0 3px  #000;
-}  
+} 
+.link__box{
+    color: #666;
+    text-decoration: none;
+    min-width: 18vw;
+    min-height: 7vh;
+}
+.link__box:focus{
+    outline: 2px solid #128172;
+    margin: 0 0.1rem;
+}
 .box{
-    min-width: 20vw;
-    min-height: 2vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1rem;
-}
-.box a{
-    color: #666;
-    text-decoration: none;
 }
 .box:hover{
     background-color: #ddd;
-    font-size: 0.95rem;
+    color: #128172;
     font-weight: 900;
 }
 .selecionado{
-    box-shadow:01px -1px 7px #128172;
-    border: 1px solid #128172a9;
-    font-size: 0.95rem;
+    border-bottom: 5px solid #128172a9;
     font-weight: 900;
 }
 /* banner */
@@ -120,9 +124,9 @@ h1{
     flex-direction: column;
     color: #fff;
 }
-.container h2{
+.titulo__container{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin: 1.5rem;
 }
 /* campos */
@@ -139,7 +143,7 @@ h1{
     margin: 0 1rem;
     text-align: center;
 }
-.tipo:hover, input[type="button"]:hover, .botao__detalhes:hover, .botao:hover{
+.tipo:hover, .busca:hover, .botao__detalhes:hover, .botao__ofertas:hover{
     background-color: #128172a9;
     background-image: none;
     color: #000;
@@ -169,13 +173,13 @@ input[type="radio"]{
     font-size: 1.3rem;
 }
 input{
-    font-family: OpenDyslexic;;
+    font-family: OpenDyslexic;
     height: 2.2rem;
     border-radius: 5px;
     border: 0;
     padding-left: 2rem;
 }
-.cabecalho a:focus, footer a:focus{
+.cabecalho a:focus, .busca:focus{
     outline: 2px solid #fff;
 }
 input:focus, a:focus{
@@ -196,7 +200,7 @@ input:focus, a:focus{
 #pessoas{
     background-image: url(../images/person-silhouette.png);
 }
-input[type="button"]{
+.busca{
     background-image: url(../images/loupe.png);
     height: 2.2rem;
     color: #fff;
@@ -207,7 +211,7 @@ input[type="button"]{
     padding: 0;
     box-sizing: border-box;
 }
-#destino, #entrada, #saida, #quartos, #pessoas, #email, input[type="button"]{
+#destino, #entrada, #saida, #quartos, #pessoas, #email, .busca{
     background-repeat: no-repeat;
     background-position: 10px center;
 }
@@ -236,7 +240,11 @@ input[type="button"]{
     text-decoration: none;
     cursor: pointer;
 }
+.box__hoteis a{
+    text-decoration: none;
+}
 .texto__hoteis{
+    text-align: left;
     margin: 0 0.5rem 1rem;
     color: #333;
 }
@@ -244,9 +252,11 @@ img{
     max-width: 100%;
 }
 .titulo__hoteis{
-    font-size: 1.3rem;
     margin: 0.5rem 0 1rem;
+}
+.titulo__hoteis a{
     color: #333;
+    font-size: 1.3rem;     
 }
 .estrelas{
     margin-bottom: 1rem;
@@ -318,7 +328,7 @@ footer{
 #email{
     background-image: url(../images/new-email.png);
 }
-.botao{
+.botao__ofertas{
     color: #fff;
     border-radius: 5px;
     height: 2.3rem;
@@ -327,10 +337,16 @@ footer{
     background-color: #128172;
     padding: 5px;
 }
+.botao__ofertas:focus, footer a:focus{
+    outline: 2px solid #000;
+}
 /* telas com máximo de 850px */
 @media(max-width:850px){
-    .box{
-        min-width: 20vw;
+    .cabecalho{
+        height: 12vh;
+    }
+    .link__box{
+        min-width: 22vw;
     }
     .container__hoteis{
         flex-direction: column;
@@ -338,7 +354,7 @@ footer{
     .box__hoteis{
         width: 100%;
     }
-    input[type="button"]{
+    .busca{
         background-image: none;
     }
 }
@@ -352,6 +368,9 @@ footer{
     }
     .sessoes{
         background-color: #fff;
+    }
+    .link__box{
+        min-width: 35vw;
     }
     .container__banner{
         margin-top: 20vh;
@@ -387,9 +406,6 @@ footer{
     .menu.open {
         right: 0vw;
     }
-    .box{
-        min-width: 33vw;
-    }
     .container{
         width: 100%;
     }
@@ -410,8 +426,8 @@ footer{
 }
 /* telas com máximo de 370px */
 @media(max-width:370px){
-    .box{
-        min-width: 40vw;
+    .link__box{
+        min-width: 45vw;
     }
     .tipo{
         width: 35vw;
