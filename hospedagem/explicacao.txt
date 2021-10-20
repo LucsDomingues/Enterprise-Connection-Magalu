@@ -1,0 +1,36 @@
+1. Criamos 02 layouts para o site, sendo um padrão e outro
+acessível que pode ser acessado ao clicar no botão na página
+
+2. Em busca de obter um site mais acessível decidimos primeiro entender como uma fonte
+pode afetar a leitura de determinados públicos. Através de pesquisas na Web identificamos
+que a fonte OpenDyslexic facilita a leitura do publico disléxico.
+
+2. Através de pesquisas para entendimento do publico autista descobrimos que figuras
+de linguagens deveriam ser evitadas, desta forma escrevemos o nosso site sem esse tipo
+de linguagem. 
+
+3. Colocamos o Alt em todas as imagens para quando uma pessoa passar um leitor de texto
+por cima, seja possível ler o que aquela imagem representa, além disso evitamos escrever
+nas imagens, pois desta forma nosso usuário em questão não poderia ler aquela imagem.
+
+4. Adicionamos Labels para os elementos de formulário, desta forma o usuário tem muito
+mais facilidade de saber do que o campo se trata. Além disso os atributos for correspondem
+aos IDS
+
+5. Nosso site inicialmente contava com uma paleta de cores não
+apropriada para todos os publicos, pois o verde principalmente
+para daltonicos não é muito bom. Desta forma, através de pesquisas
+escolhemos outra paleta de cores e aplicamos contraste nas fontes
+para que ela possa ser mais visual sempre colocando uma cor 
+com fundo mais escuro e as fontes em um tom mais claro.
+
+6. O Layout de busca muda na opção acessível, pois pensamos
+que se uma pessoa passa um leitor em cima do conteudo 
+ele precisa ser mais explicativo
+
+
+
+
+
+
+
