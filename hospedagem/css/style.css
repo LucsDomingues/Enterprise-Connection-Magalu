@@ -390,6 +390,9 @@ footer{
     .box__hoteis{
         width: 49%;
     }
+    .campo{
+        width: 45%;
+    }
 }
 /* telas com máximo de 600px */
 @media(max-width:600px) {
@@ -427,9 +430,6 @@ footer{
     }
     .tipo{
         width: 35vw;
-    }
-    .campo{
-        width: 45%;
     }
     .direitos{
         font-size: 1.3rem;
