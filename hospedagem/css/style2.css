@@ -320,6 +320,7 @@ footer{
     font-size: 1.5rem;
     margin: 1rem;
     font-style: normal;
+    text-decoration: none;
 }
 .redes__sociais:hover, .link__hoteis a:hover{
     color: #E07D00;
@@ -404,14 +405,14 @@ footer{
     .container__banner{
         margin-top: 20vh;
     }
-    .container__hoteis{
-        flex-direction: column;
-    }
-    .box__hoteis{
-        width: 100%;
-    }
     .busca{
         background-image: none;
+    }
+    .box__hoteis{
+        width: 49%;
+    }
+    .redes{
+        flex-direction: column;
     }
 }
 /* telas com máximo de 600px */
@@ -420,6 +421,12 @@ footer{
         min-width: 35vw;
     }
     .container{
+        width: 100%;
+    }
+    .container__hoteis{
+        flex-direction: column;
+    }
+    .box__hoteis{
         width: 100%;
     }
     .contato{
@@ -450,6 +457,9 @@ footer{
     }
     .direitos{
         font-size: 1.3rem;
+    }
+    .redes__sociais{
+        font-size: 1.2rem;
     }
 }
 @media(max-height: 450px){

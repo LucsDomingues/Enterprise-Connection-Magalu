@@ -28,6 +28,9 @@ com fundo mais escuro e as fontes em um tom mais claro.
 que se uma pessoa passa um leitor em cima do conteudo 
 ele precisa ser mais explicativo
 
+7. Descrevemos melhor as imagens para que usuários com leitores de tela possam imaginar os elementos da imagem.
+
+8. Descrevemos os ícones de redes sociais, email e telefone pois pessoas com leitores de tela não entenderiam apenas ícones.
 
 
 

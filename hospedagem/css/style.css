@@ -303,6 +303,7 @@ footer{
     font-size: 1.5rem;
     margin: 1rem;
     font-style: normal;
+    text-decoration: none;
 }
 .redes__sociais:hover, .link__hoteis a:hover{
     color: #000;
@@ -383,14 +384,11 @@ footer{
     .container__banner{
         margin-top: 20vh;
     }
-    .container__hoteis{
-        flex-direction: column;
-    }
-    .box__hoteis{
-        width: 100%;
-    }
     .busca{
         background-image: none;
+    }
+    .box__hoteis{
+        width: 49%;
     }
 }
 /* telas com máximo de 600px */
@@ -399,6 +397,12 @@ footer{
         min-width: 35vw;
     }
     .container{
+        width: 100%;
+    }
+    .container__hoteis{
+        flex-direction: column;
+    }
+    .box__hoteis{
         width: 100%;
     }
     .contato{
